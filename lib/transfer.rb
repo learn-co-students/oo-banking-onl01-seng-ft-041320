@@ -21,6 +21,7 @@ class Transfer
     elsif @status == "complete"
       puts "Transaction was already excuted"
     else
+      #putting in a coment
       @sender.balance -= @amount
       @receiver.balance += @amount
       @status = "complete"
